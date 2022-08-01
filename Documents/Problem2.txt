@@ -1,0 +1,82 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{comment} 
+\usepackage{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage{tabto,enumitem}
+
+\begin{document}
+\noindent
+\large\textbf{SOEN 6011} \hfill \textbf{Aniket Tailor}\\
+\large\textbf{Software Engineering Processes} \hfill \textbf{40195068} \\
+Function 8 : Standard Deviation $\sigma$ \hfill Date: 5 August 2022\\
+\normalsize Problem 2 \\
+\section*{Assumptions}
+Any variable, as long as it can be sorted, can have its variance and standard deviation determined. However, the standard deviation is only a useful indicator of dispersion for a measurement variable when the data have a symmetrical distribution, which is frequently a normal distribution. If these presumptions are not true, using the standard deviation to show the variability of observations in range plots and box-and-whisker plots is misleading. This assumption is also a prerequisite for assumptions on the percentage of observations that fall within the range of agreement.
+
+\section*{Requirements}
+\begin{enumerate}[noitemsep]
+        \item \textbf{First Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F1
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } High
+            \item\textbf{Description = } Standard deviation only deals with numbers and not strings.
+        \end{itemize}
+        \item \textbf{Second Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F2
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } High
+            \item\textbf{Description = } Standard deviation is the square root of Variance, hence it's value should not be negative.
+        \end{itemize}
+        \item \textbf{Third Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F3
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } Moderate
+            \item\textbf{Description = }  It's important to keep in mind that the standard deviation occurs together with the variance.
+        \end{itemize}
+        
+        \newpage
+        \item \textbf{Fourth Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F4
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } High
+            \item\textbf{Description = }   For calculating the mean, natural and real numbers should be considered.
+        \end{itemize}
+        \item \textbf{Fifth Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F5
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } High
+            \item\textbf{Description = }   For calculating standard deviation, at-least two numbers should be given as input.
+        \end{itemize}
+        \item \textbf{Sixth Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F6
+            \item\textbf{Type = } Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } High
+            \item\textbf{Description = }   If all the data values are same then the standard deviation should be 0.
+        \end{itemize}
+        \item \textbf{Seventh Requirement}
+        \begin{itemize}[noitemsep]
+            \item \textbf{ID = } F7
+            \item\textbf{Type = } Non Functional Requirement
+            \item\textbf{Version = } 1.0
+            \item\textbf{Priority = } Low
+            \item\textbf{Description = }   Code should be well indented and easy to understand with proper documentation. 
+        \end{itemize}
+        \newpage
+    \end{enumerate}
+
+
+\end{document}

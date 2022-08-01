@@ -40,4 +40,17 @@ Where:
         \item It is sensitive to outliers.
     \end{itemize}
 
+\begin{thebibliography}{15}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibitem{1}
+\href{https://en.wikipedia.org/wiki/Standard_deviation}{https://en.wikipedia.org/wiki/Standard\_deviation}
+
+\bibitem{2}
+\href{https://www.investopedia.com/terms/s/standarddeviation.asp}{https://www.investopedia.com/terms/s/standarddeviation.asp}
+
+\bibitem{3}
+\href{https://www.nlm.nih.gov/nichsr/stats\_tutorial/section2/mod8\_sd.html}{https://www.nlm.nih.gov/nichsr/stats\_tutorial/section2/mod8\_sd.html}
+
+\end{thebibliography}
 \end{document}
