@@ -6,7 +6,7 @@
 \usepackage{environ}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-
+\usepackage{graphicx}
 \usepackage{tabto,enumitem}
 
 
@@ -91,7 +91,15 @@ Function 8 : Standard Deviation $\sigma$ \hfill Date: 5 August 2022\\
 \Statex
 \end{algorithmic}
 \end{algorithm}
-
+\newpage
+\section*{Mind Map}
+The below given mind map shows the flow of the pseudo code for finding Standard Deviation. The algorithm will start from Main() method by taking input of data values. It will then call the CalculateSum() procedure to calculate sum of the data elements. With mean and array size in hand, CalculateVariance() method will be called. Internally this method calls Power() function to compute power and atlast SquareRoot() is used to find Standard Deviation.\\  
+\begin{figure}[h]
+    \centering
+    \includegraphics{Images/mindmap.png}
+    \caption{Mind Map}
+    \label{fig:Mind Map Image}
+\end{figure}
 \newpage
 \section*{Pros of Traditional Algorithm}
 \begin{itemize}
