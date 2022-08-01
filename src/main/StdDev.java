@@ -1,5 +1,5 @@
 package main;
-import java.util.Scanner;
+import java.util.*;
 public class StdDev {
 
 	public static void main(String[] args) {
@@ -33,6 +33,13 @@ public class StdDev {
 			}
 		}
 		
+//		boolean same = false;
+		boolean same = checkArrayValues(array);
+		if(same)
+		{
+			System.out.println("Standard Deviation is: 0");
+			System.exit(0);
+		}
 		double sum = CalculateSum(array);
 		double mean = sum/size;
 		double variance = calculateVariance(array,mean,size);
@@ -42,7 +49,6 @@ public class StdDev {
 		
 		System.out.println("Population Standard Deviation is: "+PopulationStandardDeviation);
 		System.out.println("Sample Standard Deviation is: "+SampleStandardDeviation);
-		System.out.println(variance2);
 	}
 	
 	public static double CalculateSum(double a[])
@@ -74,7 +80,8 @@ public class StdDev {
 		return variance;
 	}
 	
-	public static double squareRoot(double number) {
+	public static double squareRoot(double number) 
+	{
 	    double temp;
 	    double squareRoot = number / 2;
 	    do 
@@ -84,4 +91,18 @@ public class StdDev {
 	    } while ((temp - squareRoot) != 0);
 	    return temp;
 	  }
+	
+	public static boolean checkArrayValues(double[] array) {
+	    if (array.length == 0) {
+	        return true;
+	    } else {
+	        double first = array[0];
+	        for (double element : array) {
+	            if (element != first) {
+	                return false;
+	            }
+	        }
+	        return true;
+	    }
+	}
 }
