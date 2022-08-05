@@ -1,0 +1,69 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{comment} 
+\usepackage{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{environ}
+\usepackage{graphicx}
+\usepackage{tabto,enumitem}
+
+
+\begin{document}
+\noindent
+\large\textbf{SOEN 6011} \hfill \textbf{Aniket Tailor}\\
+\large\textbf{Software Engineering Processes} \hfill \textbf{40195068} \\
+Function 8 : Standard Deviation $\sigma$ \hfill Date: 5 August 2022\\
+\normalsize Problem 5 \\
+
+
+\section*{Requirements Traceability}
+In this section, all the unit tests are traced with the requirements from Problem 2. Unit testing is done using the JUnit framework of Java. 
+
+\subsection*{Test Case number 1}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC1
+        \item \textbf{Corresponding Requirement ID: } F3, F4
+        \item \textbf{Test Case Method: } testCalculateSum()
+        \item \textbf{Description: } The testCalculateSum(), as the name suggests it verifies if the CalculateSum() method is calculating the total of all the array elements as expected. 
+    \end{itemize}
+    
+\subsection*{Test Case number 2}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC2
+        \item \textbf{Corresponding Requirement ID: } F2
+        \item \textbf{Test Case Method: } testPower()
+        \item \textbf{Description: } The testPower() method, verifies if the Power() method is returning the correct power of a number. 
+    \end{itemize}
+    
+\subsection*{Test Case number 3}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC3
+        \item \textbf{Corresponding Requirement ID: } F2, F4
+        \item \textbf{Test Case Method: } testCalculateVariance()
+        \item \textbf{Description: } The testCalculateVariance() method tests the calculateVariance() method in the source code. It makes sure if the responsible method is working fine and calculating variance as expected. 
+    \end{itemize}
+    
+\subsection*{Test Case number 4}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC4
+        \item \textbf{Corresponding Requirement ID: } F2
+        \item \textbf{Test Case Method: } testSquareRoot()
+        \item \textbf{Description: } This method verifies the squareRoot() method in source code. As the name goes it checks the square root of a number. 
+    \end{itemize}
+
+\subsection*{Test Case number 5}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC5
+        \item \textbf{Corresponding Requirement ID: } F1, F5, NF7
+        \item \textbf{Test Case Method: } testMain()
+        \item \textbf{Description: } The testMain() method tests out driver function (Main). It tests the main() function with all different types of inputs such as String, Real numbers, Whole numbers. If any inappropriate input is given then proper error and exception handling is in place. It won't let the program terminate or crash. 
+    \end{itemize}
+    
+\subsection*{Test Case number 6}
+    \begin{itemize}
+        \item \textbf{Test Case ID: } UTC6
+        \item \textbf{Corresponding Requirement ID: } F6
+        \item \textbf{Test Case Method: } testMainSameValues()
+        \item \textbf{Description: } When all the array elements are same, at that time the Standard Deviation turns out to be 0. Hence this unit test case checks the scenario where all the input values are same. 
+    \end{itemize}
+\end{document}
