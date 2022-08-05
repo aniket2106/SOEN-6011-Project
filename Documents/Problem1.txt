@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{environ}
 \usepackage{tabto,enumitem}
+\usepackage{graphicx}
 
 \begin{document}
 \noindent
@@ -24,7 +25,7 @@ Where:
         $\sigma$ = Standard Deviation\\
         $n$ = Size of the population\\
         $x$ = each value from population \\
-        $\overline{x}$ = Mean of the population\\
+        $\bar{x}$ = Mean of the population\\
     \end{itemize}
 
 \section{Domain and Co-Domain}
@@ -40,6 +41,15 @@ Where:
         \item It is sensitive to outliers.
     \end{itemize}
 
+\section{Context of Use Model}
+\begin{figure}[h]
+    \centering
+    \includegraphics{Images/Context-of-use.png}
+    \caption{Context of use model}
+    \label{fig:Context of use model image}
+\end{figure}
+
+\newpage
 \begin{thebibliography}{15}
 
 \addcontentsline{toc}{chapter}{Bibliography}

@@ -40,16 +40,16 @@ public class StdDev {
     boolean same = checkArrayValues(array);
     if (same) {
       System.out.println("Standard Deviation is: 0");
-      System.exit(0);
+    } else {
+      double sum = calculateSum(array);
+      double mean = sum / size;
+      double variance = calculateVariance(array, mean, size);
+      double variance2 = calculateVariance(array, mean, size - 1);
+      double populationStandardDeviation = squareRoot(variance);
+      double sampleStandardDeviation = squareRoot(variance2);
+      System.out.println("Population Standard Deviation is: " + populationStandardDeviation);
+      System.out.println("Sample Standard Deviation is: " + sampleStandardDeviation);
     }
-    double sum = calculateSum(array);
-    double mean = sum / size;
-    double variance = calculateVariance(array, mean, size);
-    double variance2 = calculateVariance(array, mean, size - 1);
-    double populationStandardDeviation = squareRoot(variance);
-    double sampleStandardDeviation = squareRoot(variance2);
-    System.out.println("Population Standard Deviation is: " + populationStandardDeviation);
-    System.out.println("Sample Standard Deviation is: " + sampleStandardDeviation);
     input.close();
   }
 

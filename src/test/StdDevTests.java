@@ -2,6 +2,9 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.ByteArrayInputStream;
+
 import main.StdDev;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -75,5 +78,25 @@ class StdDevTests {
 	@Test
 	void testSquareRoot() {
 		assertEquals(2,sd.squareRoot(4));
+	}
+	
+	/**
+	 * This method tests the driver function (Main) with all possible combinations.
+	 * @author Aniket Tailor
+	 */
+	@Test
+	void testMain() {
+		System.setIn(new ByteArrayInputStream("0 1 asd 4 12 asd xc 45 7 8".getBytes()));
+		StdDev.main(null);
+	}
+	
+	/**
+	 * This method tests the driver function (Main) with same input values.
+	 * @author Aniket Tailor
+	 */
+	@Test
+	void testMainSameValues() {
+		System.setIn(new ByteArrayInputStream("3 3 3 3".getBytes()));
+		StdDev.main(null);
 	}
 }
